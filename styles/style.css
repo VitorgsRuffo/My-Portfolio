@@ -1,0 +1,102 @@
+* { 
+    /*we're doing this to remove any decoration from the page's text, e.g the line under links*/
+    text-decoration: none;
+}
+
+/*<HEADER>*/
+
+body {
+    background-color: #f3f3f3;
+}
+
+header {
+    background-color: #fff;
+    width: 100%;
+    height: 120px;
+}
+
+header .logo {
+    font-family: 'Teko', sans-serif;
+    font-size: 44px;
+    font-weight: 600;
+    color: #111;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header nav ul { /*will style the ul that is a container for our list of links*/
+    display: block;
+    margin: 0 auto; /*if we don't set a display block to the ul the margin will not take affect. (See why!)*/
+    /*but the ul content is already taking 100% of width (inherited from header) so technically it is already centered*/
+    /*to fix that we can use the value fit-content on the width property*/
+    width: fit-content;
+}
+
+header nav ul li {/*will style the each item on the ul container*/
+    /*make the elements be positioned horizontally next to each other*/
+    display: inline-block; 
+    /*by making them float to left we'll remove any gaps between them*/
+    float: left;
+    /*removes the bullet points from the list itens. bullet points are a default style for unordered lists*/
+    list-style: none;
+    /*adding some space in between the nav options*/
+    padding: 0px 16px;
+}
+
+header nav ul li a { /*will style the text link itself that is inside each item on the ul list*/
+    font-family: 'Teko', sans-serif;
+    font-size: 24px;
+    color: #111;
+}
+
+header .cases-button {
+    /*we don't wanna show the cases link in the header if we are on a mobile device*/
+    display: none;
+}
+
+/*<MAIN>*/
+
+.banner {
+    width: 100%;
+    /*height: we want it to be the intire webpage height minus the header height*/
+    /*height: 100vh; /*vh: viewheight. So the height of the banner will be 100% of the viewheight of the mobile device*/
+    /*but, 100% of the view height will include the space of the header(120px) that is already taken by it.*/
+    /*so the banner will get get the viewheight, but the header will push it down because the first 120px it has already taken and we'll have to scroll down to see the rest of the banner*/
+    /*we don't want that. We want the banner to taken the left space of the viewheight so we can use calc() to calculate this rest and assign it to the height of the banner*/
+    height: calc(100vh - 120px);
+    background-image: url(../images/banner5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display: table;
+}
+
+.center-banner-text { /*we're gonna transform the banner display into a table and its text will be table cells. That way, it does not the device's screen the same effect will happen because if we just used margins for example the result could be different in different devices*/
+    display: table-cell;
+    /*we're vertical aligning the things (text) inside this div to the middle*/
+    vertical-align: middle;
+}
+
+.banner h2 {
+    font-family: 'Teko', sans-serif;
+    font-size: 60px;
+    color: #fff;
+    line-height: 70px;
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 2px 2px 2px #111;
+}
+
+.banner h1 {
+    font-family: 'Teko', sans-serif;
+    font-size: 35px;
+    font-weight: 100;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    text-shadow: 2px 2px 3px #111;
+}
