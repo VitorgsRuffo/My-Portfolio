@@ -3,11 +3,7 @@
     text-decoration: none;
 }
 
-/*<HEADER>*/
-
-body {
-    background-color: #f3f3f3;
-}
+/*<HEADER-MOBILE-FIRST>*/
 
 header {
     background-color: #fff;
@@ -99,4 +95,67 @@ header .cases-button {
     line-height: 40px;
     text-align: center;
     text-shadow: 2px 2px 3px #111;
+}
+
+
+.links div {
+    margin: 20px;
+    /*because we have 10px of margin on left and right*/
+    width: calc(100% - 40px);
+    height: 100px;
+    background-color: #f2f2f2;
+}
+
+.links div h3 {
+    font-family: 'Teko', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 100px;
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*<FOOTER>*/
+
+footer {
+    width: calc(100% - 80px);
+    /*let's just set a padding and not a height. That way the footer's height will adapt acordding to the things it wraps*/
+    padding: 40px 40px;
+    background-color: #111;
+    /*when we have a box(like footer) and its child are floating inside it sometimes it get confused recognizing 'em. We can hide the overflow to fix this problem*/
+    overflow: hidden;
+}
+
+footer ul {
+    /*fit-content: returns a width that is large enough to fit all contents of the tag that is being styled (in this case the ul tag).*/
+    width: fit-content;
+    float: left;
+    padding-left: 20px;
+}
+
+footer ul li {
+    display: block;
+    list-style: none;
+}
+
+footer ul li a {
+    font-family: 'Teko', sans-serif;
+    font-size: 30px;
+    color: #fff;
+    line-height: 40px;
+}
+
+footer .footer-top-projects {
+    display: none;
+}
+
+.socialMedia {
+    width: 60px;
+    float: right;
+}
+
+.socialMedia img {
+    width: 100%;
+    margin-bottom: 10px;
 }
