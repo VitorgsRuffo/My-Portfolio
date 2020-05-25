@@ -46,12 +46,52 @@ header nav ul li a { /*will style the text link itself that is inside each item 
     font-family: 'Teko', sans-serif;
     font-size: 24px;
     color: #111;
+    text-transform: uppercase;
 }
 
-header .cases-button {
+header .projects-button {
     /*we don't wanna show the cases link in the header if we are on a mobile device*/
     display: none;
 }
+
+/*<HEADER-DESKTOP>*/
+/*When the size of the screen be >= 1000px we are going to apply this changes on the code above*/
+@media only screen and (min-width: 1000px) {
+    header .logo {
+        /*to center the logo we need to do a calculation: subtract the logo height(line-height) from the header height and devide the result by 2 that is gonna be the value of the margin top and bottom*/
+        margin: 41px 0;
+        text-align: left;
+        line-height: 38px;
+        padding: 0px 20px 0px 40px;
+        border-right: 3px solid #111;
+        float: left;
+    } 
+    
+    header nav ul {
+        /*to center the ul we need to do a calculation: subtract the ul height(a line-height) from the header height and devide the result by 2 that is gonna be the value of the margin top and bottom*/
+        margin: 30px 0px 30px 30px;
+        float: left;
+    }
+    
+    header nav ul li a { 
+        line-height: 60px;
+    }
+
+    header .projects-button {
+        display: block;
+        float: right;
+        font-family: 'Teko', sans-serif;
+        font-size: 24px;
+        color: #111;
+        text-transform: uppercase;
+        line-height: 40px;
+        border: 1px solid #111;
+        margin-right: 40px;
+        margin-top: 39px;
+        padding: 0 20px;
+    }
+}
+
 
 /*<MAIN>*/
 
@@ -116,6 +156,48 @@ header .cases-button {
     text-transform: uppercase;
 }
 
+/*<MAIN-DESKTOP>*/
+/*When the size of the screen be >= 1000px we are going to apply this changes on the code above*/
+@media only screen and (min-width: 1000px) {
+
+    .banner {
+        height: 400px;
+    }
+
+    .wrapper {
+        width: 700px;
+        margin: 0 auto;
+    }
+
+    .links {
+        margin-top: 20px;
+    }
+
+    .links div {
+        margin: 0px 10px 20px 10px;
+        /*because we have 10px of margin on left and right*/
+        height: 150px;
+        background-color: #f2f2f2;
+        float: left;
+    }
+
+    .squared-box {
+        /*this do not take affect because the previous width styling has greater precedence for some reason. to override that we can use !important*/ 
+        width: calc(25% - 20px) !important;
+    }
+
+    .rectangular-box {
+        width: calc(50% - 20px) !important;
+    }
+
+    .links div h3 {
+        font-size: 28px;
+        font-weight: 660;
+        line-height: 150px;
+    }
+
+}
+
 /*<FOOTER>*/
 
 footer {
@@ -158,4 +240,24 @@ footer .footer-top-projects {
 .socialMedia img {
     width: 100%;
     margin-bottom: 10px;
+}
+
+/*<FOOTER-DESKTOP>*/
+/*When the size of the screen be >= 1000px we are going to apply this changes on the code above*/
+@media only screen and (min-width: 1000px) {
+    footer .footer-top-projects {
+        display: block;
+    }
+
+    footer ul li p {
+        font-family: 'Teko', sans-serif;
+        font-size: 30px;
+        color: #fff;
+        line-height: 40px;
+        text-transform: uppercase;
+    }
+
+    footer ul {
+        padding-right: 40px;
+    }
 }
