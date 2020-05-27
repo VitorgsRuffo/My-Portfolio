@@ -3,12 +3,21 @@
     text-decoration: none;
 }
 
+main {
+    padding-top: 120px;
+}
+
 /*<HEADER-MOBILE-FIRST>*/
 
 header {
     background-color: #fff;
     width: 100%;
     height: 120px;
+    /*makes the header fixed in the page even if we scroll it down*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 header .logo {
@@ -93,7 +102,7 @@ header .projects-button {
 }
 
 
-/*<MAIN>*/
+/*<INDEX-MAIN>*/
 
 .banner {
     width: 100%;
@@ -156,7 +165,7 @@ header .projects-button {
     text-transform: uppercase;
 }
 
-/*<MAIN-DESKTOP>*/
+/*<DESKTOP-INDEX-MAIN>*/
 /*When the size of the screen be >= 1000px we are going to apply this changes on the code above*/
 @media only screen and (min-width: 1000px) {
 
@@ -174,7 +183,7 @@ header .projects-button {
     }
 
     .links div {
-        margin: 0px 10px 20px 10px;
+        margin: 10px 10px 10px 10px;
         /*because we have 10px of margin on left and right*/
         height: 150px;
         background-color: #f2f2f2;
@@ -196,6 +205,135 @@ header .projects-button {
         line-height: 150px;
     }
 
+}
+
+/*PROJECTS-MAIN*/
+
+.projects-links {
+    /*as all the divs inside the section projects links are floating it will not reconize 'em thus it won't have a height. To fix that we hidde the overflow*/
+    overflow: hidden;
+}
+
+.projects-links .wrapper h2 {
+    font-family: 'Teko', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #111;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.projects-links .wrapper div {
+    /*one way of positioning elements horizontally next to each other. obs: we have other ways of doing that! (flexbox, css grid)*/
+    float: left;
+    width: 213.33px;
+    height: 213.33px;
+    margin: 0px 10px 20px 10px;
+    background-color: #e3e3e3;
+}
+
+.projects-links .wrapper div p {
+    font-family: 'Teko', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #111;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 213.33px;
+    text-transform: uppercase;
+}
+
+.projects-links .wrapper .contact {
+    width: 680px;
+    height: 215.33px;
+    margin: 0px 10px 20px 10px;
+    background-color: #e3e3e3;
+}
+
+.projects-links .wrapper .contact p {
+    line-height: normal;
+    margin-top: 72.5px;
+    font-weight: 600;
+}
+
+.projects-links .wrapper .contact p + p {
+    line-height: normal;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/*Project-MAIN*/
+.wrapper .gallery h2 {
+    font-family: 'Teko', sans-serif;
+    font-size: 38px;
+    font-weight: 600;
+    color: #111;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.wrapper .gallery img {
+    display: block;
+    width: 683px;
+    height: 384px;
+    margin: 20px auto;
+}
+
+.wrapper .info .description {
+    width: 683px;
+    margin: 0px 8.5px 20px 8.5px;
+}
+
+.wrapper .info .description h3 {
+    font-family: 'Teko', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #111;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.wrapper .info .description p {
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+    color: #111;
+    line-height: 25px;
+    /*display the the in the p tag in coluns*/
+    column-count: 3;
+    column-gap: 30px;
+}
+
+.wrapper .info .contact {
+    float: left;
+    width: 683px;
+    height: 215.33px;
+    margin: 0px 8.5px 20px 8.5px;
+    background-color: #e3e3e3;
+}
+
+.wrapper .info .contact p {
+    font-family: 'Teko', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #111;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 72.5px;
+}
+
+.wrapper .info .contact p + p {
+    font-family: 'Teko', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #111;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
 }
 
 /*<FOOTER>*/
@@ -223,7 +361,7 @@ footer ul li {
 
 footer ul li a {
     font-family: 'Teko', sans-serif;
-    font-size: 30px;
+    font-size: 23px;
     color: #fff;
     line-height: 40px;
 }
@@ -251,7 +389,7 @@ footer .footer-top-projects {
 
     footer ul li p {
         font-family: 'Teko', sans-serif;
-        font-size: 30px;
+        font-size: 23px;
         color: #fff;
         line-height: 40px;
         text-transform: uppercase;
