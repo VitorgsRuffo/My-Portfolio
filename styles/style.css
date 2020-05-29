@@ -3,17 +3,19 @@
     text-decoration: none;
 }
 
-main {
-    padding-top: 120px;
-}
+/*removes the bullet points from the list itens. bullet points are a default style for unordered lists*/
+li { list-style: none; }
 
 /*<HEADER-MOBILE-FIRST>*/
-
 header {
     background-color: #fff;
     width: 100%;
     height: 120px;
-    /*makes the header fixed in the page even if we scroll it down*/
+    
+    /*sets the positioning method for an element. then this element is positioned using top, left, ...*/
+    /*static: it's the default value and the element is not positioned in any special way.*/
+    /*relative: the element will be positioned relative to its normal(static) position.*/
+    /*fixed: the element is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled */
     position: fixed;
     top: 0;
     left: 0;
@@ -26,27 +28,30 @@ header .logo {
     font-weight: 600;
     color: #111;
     text-transform: uppercase;
-    display: block;
-    margin: 0 auto;
     text-align: center;
     padding: 20px 0;
+
+    /*specifies the display behavior of an element*/
+    /*inline: Displays an element as an inline element (like <span>). Any height and width properties will have no effect*/
+    /*block: Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width*/
+    /*inline-block: Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values*/
+    /*none: do not display the element*/
+    display: block; 
 }
 
 header nav ul { /*will style the ul that is a container for our list of links*/
-    display: block;
-    margin: 0 auto; /*if we don't set a display block to the ul the margin will not take affect. (See why!)*/
-    /*but the ul content is already taking 100% of width (inherited from header) so technically it is already centered*/
-    /*to fix that we can use the value fit-content on the width property*/
+     
+    /*the ul content is already taking 100% of width (inherited from header) so centralizing the li's by adding a margin will not take affect*/
+    /*to fix that we can use the value fit-content on the width property to cut the extra width of the ul then we can center the li's using magins*/
     width: fit-content;
+    margin: 0 auto;
+
 }
 
 header nav ul li {/*will style the each item on the ul container*/
-    /*make the elements be positioned horizontally next to each other*/
-    display: inline-block; 
-    /*by making them float to left we'll remove any gaps between them*/
-    float: left;
-    /*removes the bullet points from the list itens. bullet points are a default style for unordered lists*/
-    list-style: none;
+    
+    display: inline-block;  
+    
     /*adding some space in between the nav options*/
     padding: 0px 16px;
 }
@@ -59,7 +64,7 @@ header nav ul li a { /*will style the text link itself that is inside each item 
 }
 
 header .projects-button {
-    /*we don't wanna show the cases link in the header if we are on a mobile device*/
+    /*we don't wanna show the projects button in the header if we are on a mobile device*/
     display: none;
 }
 
@@ -69,11 +74,15 @@ header .projects-button {
     header .logo {
         /*to center the logo we need to do a calculation: subtract the logo height(line-height) from the header height and devide the result by 2 that is gonna be the value of the margin top and bottom*/
         margin: 41px 0;
-        text-align: left;
-        line-height: 38px;
         padding: 0px 20px 0px 40px;
+        line-height: 38px;
         border-right: 3px solid #111;
-        float: left;
+        
+        /*left - The element floats to the left of its container
+          right - The element floats to the right of its container
+          none - The element does not float (will be displayed just where it occurs in the text). This is default
+          inherit - The element inherits the float value of its parent*/
+        float: left; 
     } 
     
     header nav ul {
@@ -87,8 +96,9 @@ header .projects-button {
     }
 
     header .projects-button {
-        display: block;
-        float: right;
+        display: block; 
+        float: right; 
+
         font-family: 'Teko', sans-serif;
         font-size: 24px;
         color: #111;
@@ -104,24 +114,36 @@ header .projects-button {
 
 /*<INDEX-MAIN>*/
 
+main {
+    padding-top: 120px;
+}
+
 .banner {
     width: 100%;
     /*height: we want it to be the intire webpage height minus the header height*/
     /*height: 100vh; /*vh: viewheight. So the height of the banner will be 100% of the viewheight of the mobile device*/
     /*but, 100% of the view height will include the space of the header(120px) that is already taken by it.*/
-    /*so the banner will get get the viewheight, but the header will push it down because the first 120px it has already taken and we'll have to scroll down to see the rest of the banner*/
+    /*so the banner will get the viewheight, but the header will push it down because the first 120px it has already taken and we'll have to scroll down to see the rest of the banner*/
     /*we don't want that. We want the banner to taken the left space of the viewheight so we can use calc() to calculate this rest and assign it to the height of the banner*/
-    height: calc(100vh - 120px);
-    background-image: url(../images/banner5.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    
+    /*calc() function performs a calculation to be used as the property value.*/
+    height: calc(100vh - 120px); 
 
-    display: table;
+    /*sets one or more background images for an element.*/
+    background-image: url(../images/banner5.jpg);
+    /*By default, a background-image is placed at the top-left corner of an element, and repeated both vertically and horizontally if it do not cover all of its container.
+      Tip: The background of an element is the total size of the element, including padding and border (but not the margin).
+      Tip: Always set a background-color to be used if the image is unavailable.
+    */
+    background-repeat: no-repeat; /*Do not repeat the image if it doesn't cover all of the container*/
+    background-position: center; /*center the image */
+    background-size: cover; /*Resize the background image to cover the entire container*/
+
+    display: table; /*the display behaviour will be like the one of a <table> element*/
 }
 
 .center-banner-text { /*we're gonna transform the banner display into a table and its text will be table cells. That way, it does not the device's screen the same effect will happen because if we just used margins for example the result could be different in different devices*/
-    display: table-cell;
+    display: table-cell; /*!!*/
     /*we're vertical aligning the things (text) inside this div to the middle*/
     vertical-align: middle;
 }
@@ -131,7 +153,6 @@ header .projects-button {
     font-size: 60px;
     color: #fff;
     line-height: 70px;
-    font-weight: 900;
     text-align: center;
     text-shadow: 2px 2px 2px #111;
 }
@@ -155,7 +176,7 @@ header .projects-button {
     background-color: #f2f2f2;
 }
 
-.links div h3 {
+.links div a h3 {
     font-family: 'Teko', sans-serif;
     font-size: 28px;
     font-weight: 600;
@@ -176,14 +197,16 @@ header .projects-button {
     .wrapper {
         width: 700px;
         margin: 0 auto;
+        overflow: hidden;
     }
 
     .links {
         margin-top: 20px;
+        overflow: hidden;
     }
 
     .links div {
-        margin: 10px 10px 10px 10px;
+        margin: 0px 10px 20px 10px;
         /*because we have 10px of margin on left and right*/
         height: 150px;
         background-color: #f2f2f2;
@@ -199,7 +222,7 @@ header .projects-button {
         width: calc(50% - 20px) !important;
     }
 
-    .links div h3 {
+    .links div a h3 {
         font-size: 28px;
         font-weight: 660;
         line-height: 150px;
@@ -211,7 +234,7 @@ header .projects-button {
 
 .projects-links {
     /*as all the divs inside the section projects links are floating it will not reconize 'em thus it won't have a height. To fix that we hidde the overflow*/
-    overflow: hidden;
+    overflow: hidden; 
 }
 
 .projects-links .wrapper h2 {
@@ -226,7 +249,8 @@ header .projects-button {
 
 .projects-links .wrapper div {
     /*one way of positioning elements horizontally next to each other. obs: we have other ways of doing that! (flexbox, css grid)*/
-    float: left;
+    float: left; 
+    
     width: 213.33px;
     height: 213.33px;
     margin: 0px 10px 20px 10px;
@@ -276,7 +300,8 @@ header .projects-button {
 }
 
 .wrapper .gallery img {
-    display: block;
+    display: block; 
+
     width: 683px;
     height: 384px;
     margin: 20px auto;
@@ -301,13 +326,15 @@ header .projects-button {
     font-size: 20px;
     color: #111;
     line-height: 25px;
+
     /*display the the in the p tag in coluns*/
-    column-count: 3;
-    column-gap: 30px;
+    column-count: 3; /*!!*/
+    column-gap: 30px; /*!!*/
 }
 
 .wrapper .info .contact {
-    float: left;
+    float: left; 
+
     width: 683px;
     height: 215.33px;
     margin: 0px 8.5px 20px 8.5px;
@@ -339,24 +366,19 @@ header .projects-button {
 /*<FOOTER>*/
 
 footer {
-    width: calc(100% - 80px);
+    width: calc(100% - 40px);
     /*let's just set a padding and not a height. That way the footer's height will adapt acordding to the things it wraps*/
-    padding: 40px 40px;
+    padding: 20px 20px;
     background-color: #111;
-    /*when we have a box(like footer) and its child are floating inside it sometimes it get confused recognizing 'em. We can hide the overflow to fix this problem*/
-    overflow: hidden;
+    
+    overflow: hidden; 
 }
 
 footer ul {
     /*fit-content: returns a width that is large enough to fit all contents of the tag that is being styled (in this case the ul tag).*/
-    width: fit-content;
+    width: fit-content; 
     float: left;
     padding-left: 20px;
-}
-
-footer ul li {
-    display: block;
-    list-style: none;
 }
 
 footer ul li a {
