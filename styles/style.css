@@ -257,6 +257,8 @@ main {
 .projects-links .wrapper .contact {
     width: calc(100% - 40px);
     height: 150px;
+    border: 1px solid #111;
+
 }
 
 .projects-links .wrapper div p {
@@ -308,6 +310,7 @@ main {
     .projects-links .wrapper .contact {
         width: calc(100% - 20px);
         height: 150px;
+        border: 1px solid #111;
     }
 
     .projects-links .wrapper div p {
@@ -323,4 +326,57 @@ main {
     .projects-links .wrapper .contact p + p {
         font-size: 23px;  
     }
+}
+
+/*<ABOUT-ME-MOBILE*/
+.presentation hr {
+    border: 0;
+    width: calc(100% - 40px);
+    height: 1.2px;
+    margin: 0px 20px 20px;
+    background: #111;
+    background-image: linear-gradient(to right, #fff, #111, #fff);
+}
+
+.presentation .wrapper {
+    width: 80%;
+    margin: 0px auto 20px;
+}
+
+.presentation .wrapper img {
+    width: 100%;
+    padding: 20px 0px;
+}
+
+.presentation .wrapper h2 {
+    font-family: 'Teko', sans-serif;
+    font-size: 35px;
+    font-weight: 550;
+    color: #111;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+
+
+.presentation .wrapper p {
+    text-align: justify;
+    text-indent: 2em;
+    font-size: 20px;
+    color: #111;
+}
+
+/*<ABOUT-ME-DESKTOP*/
+@media only screen and (min-width: 900px) {
+    .presentation .wrapper {
+        width: 700px;
+    }
+
+    .projects-links hr {
+        width: calc(100% - 100px);
+        height: 1.2px;
+        margin: 0px 50px 0px;
+    }
+
 }
