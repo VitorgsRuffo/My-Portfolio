@@ -2,6 +2,7 @@
 
     <main>
         <section class="projects-links">
+            <hr>
             <div class="wrapper">
                 <h2>Projects</h2>
                 <div>

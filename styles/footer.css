@@ -1,0 +1,58 @@
+/*<FOOTER-MOBILE>*/
+footer {
+    width: calc(100% - 40px);
+    /*let's just set a padding and not a height. That way the footer's height will adapt acordding to the things it wraps*/
+    padding: 20px 20px;
+    background-color: #111;
+    
+    overflow: hidden; 
+}
+
+footer ul {
+    /*fit-content: returns a width that is large enough to fit all contents of the tag that is being styled (in this case the ul tag).*/
+    width: fit-content; 
+    float: left;
+    padding-left: 20px;
+}
+
+footer ul li a {
+    font-family: 'Teko', sans-serif;
+    font-size: 23px;
+    color: #fff;
+    line-height: 40px;
+}
+
+footer .footer-top-projects {
+    display: none;
+}
+
+.socialMedia {
+    width: 60px;
+    float: right;
+    margin-top: 20px;
+}
+
+.socialMedia img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/*<FOOTER-DESKTOP>*/
+/*When the size of the screen be >= 1000px we are going to apply this changes on the code above*/
+@media only screen and (min-width: 900px) {
+    footer .footer-top-projects {
+        display: block;
+    }
+
+    footer ul li p {
+        font-family: 'Teko', sans-serif;
+        font-size: 23px;
+        color: #fff;
+        line-height: 40px;
+        text-transform: uppercase;
+    }
+
+    footer ul {
+        padding-right: 40px;
+    }
+}

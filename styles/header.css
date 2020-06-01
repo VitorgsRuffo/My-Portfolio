@@ -1,0 +1,104 @@
+/*<HEADER-MOBILE>*/
+header {
+    background-color: #fff;
+    width: 100%;
+    height: 140px;
+    
+    /*sets the positioning method for an element. then this element is positioned using top, left, ...*/
+    /*static: it's the default value and the element is not positioned in any special way.*/
+    /*relative: the element will be positioned relative to its normal(static) position.*/
+    /*fixed: the element is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header .logo {
+    font-family: 'Teko', sans-serif;
+    font-size: 55px;
+    font-weight: 600;
+    color: #111;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px 0;
+
+    /*specifies the display behavior of an element*/
+    /*inline: Displays an element as an inline element (like <span>). Any height and width properties will have no effect*/
+    /*block: Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width*/
+    /*inline-block: Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values*/
+    /*none: do not display the element*/
+    display: block; 
+}
+
+header nav ul { /*will style the ul that is a container for our list of links*/
+     
+    /*the ul content is already taking 100% of width (inherited from header) so centralizing the li's by adding a margin will not take affect*/
+    /*to fix that we can use the value fit-content on the width property to cut the extra width of the ul then we can center the li's using magins*/
+    width: fit-content;
+    margin: 0 auto;
+
+}
+
+header nav ul li {/*will style the each item on the ul container*/
+    
+    display: inline-block;  
+    
+    /*adding some space in between the nav options*/
+    padding: 0px 16px;
+}
+
+header nav ul li a { /*will style the text link itself that is inside each item on the ul list*/
+    font-family: 'Teko', sans-serif;
+    font-size: 24px;
+    color: #111;
+    text-transform: uppercase;
+}
+
+header .projects-button {
+    /*we don't wanna show the projects button in the header if we are on a mobile device*/
+    display: none;
+}
+
+/*<HEADER-DESKTOP>*/
+/*When the size of the screen be >= 1000px we are going to apply this changes on the code above*/
+@media only screen and (min-width: 900px) {
+    header .logo {
+        /*to center the logo we need to do a calculation: subtract the logo height(line-height) from the header height and devide the result by 2 that is gonna be the value of the margin top and bottom*/
+        margin: 51px 0;
+        padding: 0px 20px 0px 40px;
+        line-height: 38px;
+        border-right: 3px solid #111;
+        
+        /*left - The element floats to the left of its container
+          right - The element floats to the right of its container
+          none - The element does not float (will be displayed just where it occurs in the text). This is default
+          inherit - The element inherits the float value of its parent*/
+        float: left; 
+    } 
+    
+    header nav ul {
+        /*to center the ul we need to do a calculation: subtract the ul height(a line-height) from the header height and devide the result by 2 that is gonna be the value of the margin top and bottom*/
+        margin: 40px 0px 40px 30px;
+        float: left;
+    }
+    
+    header nav ul li a { 
+        line-height: 60px;
+    }
+
+    header .projects-button {
+        display: block; 
+        float: right; 
+
+        font-family: 'Teko', sans-serif;
+        font-size: 24px;
+        color: #111;
+        text-transform: uppercase;
+        line-height: 40px;
+        border: 1px solid #111;
+        margin-right: 40px;
+        margin-top: 49px;
+        padding: 0 20px;
+    }
+}

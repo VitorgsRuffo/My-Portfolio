@@ -20,9 +20,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- width=device-width: sets the width of the page to be equal to the width of the device that the user is using to see the page.-->
         <!-- initial-scale=1.0: sets the zoom level of the page-->
-        <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;600&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../styles/reset-default-style.css"> 
+        <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;600&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/header.css">
+        <link rel="stylesheet" href="../styles/footer.css">
     </head>
     <body>
         <header> <!--container for introductory content or a set of navigational links.-->

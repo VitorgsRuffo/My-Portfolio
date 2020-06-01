@@ -1,121 +1,119 @@
+/*Reset default styles*/
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
 * { 
-    /*we're doing this to remove any decoration from the page's text, e.g the line under links*/
-    text-decoration: none;
+    text-decoration: none; /*we're doing this to remove any decoration from the page's text, e.g the line under links*/
 }
 
 /*removes the bullet points from the list itens. bullet points are a default style for unordered lists*/
 li { list-style: none; }
 
-/*<HEADER-MOBILE-FIRST>*/
-header {
-    background-color: #fff;
-    width: 100%;
-    height: 120px;
-    
-    /*sets the positioning method for an element. then this element is positioned using top, left, ...*/
-    /*static: it's the default value and the element is not positioned in any special way.*/
-    /*relative: the element will be positioned relative to its normal(static) position.*/
-    /*fixed: the element is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled */
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-}
 
-header .logo {
-    font-family: 'Teko', sans-serif;
-    font-size: 44px;
-    font-weight: 600;
-    color: #111;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 20px 0;
-
-    /*specifies the display behavior of an element*/
-    /*inline: Displays an element as an inline element (like <span>). Any height and width properties will have no effect*/
-    /*block: Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width*/
-    /*inline-block: Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values*/
-    /*none: do not display the element*/
-    display: block; 
-}
-
-header nav ul { /*will style the ul that is a container for our list of links*/
-     
-    /*the ul content is already taking 100% of width (inherited from header) so centralizing the li's by adding a margin will not take affect*/
-    /*to fix that we can use the value fit-content on the width property to cut the extra width of the ul then we can center the li's using magins*/
-    width: fit-content;
-    margin: 0 auto;
-
-}
-
-header nav ul li {/*will style the each item on the ul container*/
-    
-    display: inline-block;  
-    
-    /*adding some space in between the nav options*/
-    padding: 0px 16px;
-}
-
-header nav ul li a { /*will style the text link itself that is inside each item on the ul list*/
-    font-family: 'Teko', sans-serif;
-    font-size: 24px;
-    color: #111;
-    text-transform: uppercase;
-}
-
-header .projects-button {
-    /*we don't wanna show the projects button in the header if we are on a mobile device*/
-    display: none;
-}
-
-/*<HEADER-DESKTOP>*/
-/*When the size of the screen be >= 1000px we are going to apply this changes on the code above*/
-@media only screen and (min-width: 1000px) {
-    header .logo {
-        /*to center the logo we need to do a calculation: subtract the logo height(line-height) from the header height and devide the result by 2 that is gonna be the value of the margin top and bottom*/
-        margin: 41px 0;
-        padding: 0px 20px 0px 40px;
-        line-height: 38px;
-        border-right: 3px solid #111;
-        
-        /*left - The element floats to the left of its container
-          right - The element floats to the right of its container
-          none - The element does not float (will be displayed just where it occurs in the text). This is default
-          inherit - The element inherits the float value of its parent*/
-        float: left; 
-    } 
-    
-    header nav ul {
-        /*to center the ul we need to do a calculation: subtract the ul height(a line-height) from the header height and devide the result by 2 that is gonna be the value of the margin top and bottom*/
-        margin: 30px 0px 30px 30px;
-        float: left;
-    }
-    
-    header nav ul li a { 
-        line-height: 60px;
-    }
-
-    header .projects-button {
-        display: block; 
-        float: right; 
-
-        font-family: 'Teko', sans-serif;
-        font-size: 24px;
-        color: #111;
-        text-transform: uppercase;
-        line-height: 40px;
-        border: 1px solid #111;
-        margin-right: 40px;
-        margin-top: 39px;
-        padding: 0 20px;
-    }
-}
-
-
-/*<INDEX-MAIN>*/
-
+/*<INDEX-MOBILE>*/
 main {
-    padding-top: 120px;
+    padding-top: 140px;
 }
 
 .banner {
@@ -167,7 +165,6 @@ main {
     text-shadow: 2px 2px 3px #111;
 }
 
-
 .links div {
     margin: 20px;
     /*because we have 10px of margin on left and right*/
@@ -186,9 +183,9 @@ main {
     text-transform: uppercase;
 }
 
-/*<DESKTOP-INDEX-MAIN>*/
+/*<INDEX-DESKTOP>*/
 /*When the size of the screen be >= 1000px we are going to apply this changes on the code above*/
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 900px) {
 
     .banner {
         height: 400px;
@@ -209,7 +206,7 @@ main {
         margin: 0px 10px 20px 10px;
         /*because we have 10px of margin on left and right*/
         height: 150px;
-        background-color: #f2f2f2;
+        background-color: #e3e3e3;
         float: left;
     }
 
@@ -227,197 +224,103 @@ main {
         font-weight: 660;
         line-height: 150px;
     }
-
 }
 
-/*PROJECTS-MAIN*/
-
-.projects-links {
-    /*as all the divs inside the section projects links are floating it will not reconize 'em thus it won't have a height. To fix that we hidde the overflow*/
-    overflow: hidden; 
+/*<PROJECTS-MOBILE>*/
+.projects-links hr {
+    border: 0;
+    width: calc(100% - 40px);
+    height: 1.2px;
+    margin: 0px 20px 20px;
+    background: #111;
+    background-image: linear-gradient(to right, #fff, #111, #fff);
 }
 
 .projects-links .wrapper h2 {
     font-family: 'Teko', sans-serif;
-    font-size: 28px;
-    font-weight: 600;
+    font-size: 35px;
+    font-weight: 550;
     color: #111;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 20px;
+    margin: 20px 0px;
 }
 
+
 .projects-links .wrapper div {
-    /*one way of positioning elements horizontally next to each other. obs: we have other ways of doing that! (flexbox, css grid)*/
-    float: left; 
-    
-    width: 213.33px;
-    height: 213.33px;
-    margin: 0px 10px 20px 10px;
+    width: 65%;
+    height: 100px;
+    margin: 20px auto;
     background-color: #e3e3e3;
+}
+
+.projects-links .wrapper .contact {
+    width: calc(100% - 40px);
+    height: 150px;
 }
 
 .projects-links .wrapper div p {
     font-family: 'Teko', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
     color: #111;
-    letter-spacing: 2px;
-    text-align: center;
-    line-height: 213.33px;
     text-transform: uppercase;
-}
-
-.projects-links .wrapper .contact {
-    width: 680px;
-    height: 215.33px;
-    margin: 0px 10px 20px 10px;
-    background-color: #e3e3e3;
+    letter-spacing: 4px;
+    line-height: 100px;
+    text-align: center;
 }
 
 .projects-links .wrapper .contact p {
     line-height: normal;
-    margin-top: 72.5px;
-    font-weight: 600;
+    font-weight: 550;
+    padding-top: 47.4px;
 }
 
 .projects-links .wrapper .contact p + p {
-    line-height: normal;
-    margin-top: 10px;
+    padding-top: 10px;
     font-size: 18px;
     font-weight: 500;
 }
 
-
-/*Project-MAIN*/
-.wrapper .gallery h2 {
-    font-family: 'Teko', sans-serif;
-    font-size: 38px;
-    font-weight: 600;
-    color: #111;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.wrapper .gallery img {
-    display: block; 
-
-    width: 683px;
-    height: 384px;
-    margin: 20px auto;
-}
-
-.wrapper .info .description {
-    width: 683px;
-    margin: 0px 8.5px 20px 8.5px;
-}
-
-.wrapper .info .description h3 {
-    font-family: 'Teko', sans-serif;
-    font-size: 25px;
-    font-weight: 600;
-    color: #111;
-    padding-bottom: 15px;
-    text-transform: uppercase;
-}
-
-.wrapper .info .description p {
-    font-family: 'Teko', sans-serif;
-    font-size: 20px;
-    color: #111;
-    line-height: 25px;
-
-    /*display the the in the p tag in coluns*/
-    column-count: 3; /*!!*/
-    column-gap: 30px; /*!!*/
-}
-
-.wrapper .info .contact {
-    float: left; 
-
-    width: 683px;
-    height: 215.33px;
-    margin: 0px 8.5px 20px 8.5px;
-    background-color: #e3e3e3;
-}
-
-.wrapper .info .contact p {
-    font-family: 'Teko', sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    color: #111;
-    letter-spacing: 2px;
-    text-align: center;
-    text-transform: uppercase;
-    margin-top: 72.5px;
-}
-
-.wrapper .info .contact p + p {
-    font-family: 'Teko', sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    color: #111;
-    letter-spacing: 2px;
-    text-align: center;
-    text-transform: uppercase;
-    margin-top: 10px;
-}
-
-/*<FOOTER>*/
-
-footer {
-    width: calc(100% - 40px);
-    /*let's just set a padding and not a height. That way the footer's height will adapt acordding to the things it wraps*/
-    padding: 20px 20px;
-    background-color: #111;
-    
-    overflow: hidden; 
-}
-
-footer ul {
-    /*fit-content: returns a width that is large enough to fit all contents of the tag that is being styled (in this case the ul tag).*/
-    width: fit-content; 
-    float: left;
-    padding-left: 20px;
-}
-
-footer ul li a {
-    font-family: 'Teko', sans-serif;
-    font-size: 23px;
-    color: #fff;
-    line-height: 40px;
-}
-
-footer .footer-top-projects {
-    display: none;
-}
-
-.socialMedia {
-    width: 60px;
-    float: right;
-}
-
-.socialMedia img {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-/*<FOOTER-DESKTOP>*/
-/*When the size of the screen be >= 1000px we are going to apply this changes on the code above*/
-@media only screen and (min-width: 1000px) {
-    footer .footer-top-projects {
-        display: block;
+/*<PROJECTS-DESKTOP>*/
+@media only screen and (min-width: 900px) {
+    .projects-links hr {
+        width: calc(100% - 100px);
+        height: 1.2px;
+        margin: 0px 50px 0px;
     }
 
-    footer ul li p {
-        font-family: 'Teko', sans-serif;
-        font-size: 23px;
-        color: #fff;
-        line-height: 40px;
+    .projects-links .wrapper h2 {
+        font-size: 45px;
         text-transform: uppercase;
+        text-align: center;
+        margin: 20px 0px;
     }
 
-    footer ul {
-        padding-right: 40px;
+    .projects-links .wrapper div {
+        float: left;
+        width: calc(33.33% - 20px);
+        height: 150px;
+        margin: 0px 10px 20px 10px;
+        background-color: #e3e3e3;
+    }
+
+    .projects-links .wrapper .contact {
+        width: calc(100% - 20px);
+        height: 150px;
+    }
+
+    .projects-links .wrapper div p {
+        font-size: 25px;
+        line-height: 150px;
+    }
+
+    .projects-links .wrapper .contact p {
+        font-size: 27px;
+        padding-top: 28.85px;
+    }
+    
+    .projects-links .wrapper .contact p + p {
+        font-size: 23px;  
     }
 }
