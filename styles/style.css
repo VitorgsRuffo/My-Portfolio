@@ -249,7 +249,6 @@ main {
     width: calc(100% - 40px);
     height: 150px;
     border: 1px solid #111;
-
 }
 
 .projects-links .wrapper div p {
@@ -436,6 +435,105 @@ main {
     }
     
     .wrapper .portfolio-box p {
+        font-size: 25px;
+    }
+}
+
+/*<PROJECT-MOBILE*/
+.wrapper h2 {
+    font-family: 'Teko', sans-serif;
+    font-size: 35px;
+    font-weight: 550;
+    color: #111;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    margin: 20px 0px;
+} 
+
+.wrapper .gallery img {
+    width: calc(100% - 40px);
+    margin: 0px 20px 20px;
+}
+
+.wrapper .info .description {
+    margin: 0px 20px 20px;
+}
+
+.wrapper .info .description h3 {
+    font-family: 'Teko', sans-serif;
+    font-size: 23px;
+    font-weight: 550;
+    color: #111;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.wrapper .info .description p {
+    text-indent: 20px;
+}
+
+.wrapper .info .contact {
+    width: calc(100% - 40px);
+    height: 150px;
+    background-color: #e3e3e3;
+    margin: 0px 20px 20px 20px;
+}
+
+.wrapper .info .contact p {
+    font-family: 'Teko', sans-serif;
+    font-size: 28px;
+    color: #111;
+    text-align: center;
+    font-weight: 550;
+    padding-top: 47.4px;
+}
+
+.wrapper .info .contact p + p {
+    padding-top: 10px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/*<PROJECT-DESKTOP*/
+@media only screen and (min-width: 900px) {
+    .wrapper h2 {
+        font-size: 45px;
+        letter-spacing: 4px;
+        margin: 20px 0px;
+    } 
+
+    .wrapper .gallery img {
+        width: 683px;
+        margin: 0px 8.5px 20px 8.5px;
+    }
+
+    .wrapper .info .description {
+        margin: 0px 8.5px 20px;
+    }
+
+    .wrapper .info .description h3 {
+        font-size: 30px;
+
+    }
+
+    .wrapper .info .description p {
+        column-count: 2;
+        column-gap: 20px; 
+    }
+
+    .wrapper .info .contact {
+        width: calc(100% - 17px);
+        margin: 0px 8.5px 20px 8.5px;
+    }
+
+    .wrapper .info .contact p {
+        font-size: 30px;
+    }
+    
+    .wrapper .info .contact p + p {
         font-size: 25px;
     }
 }
