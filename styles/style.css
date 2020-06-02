@@ -227,15 +227,6 @@ main {
 }
 
 /*<PROJECTS-MOBILE>*/
-.projects-links hr {
-    border: 0;
-    width: calc(100% - 40px);
-    height: 1.2px;
-    margin: 0px 20px 20px;
-    background: #111;
-    background-image: linear-gradient(to right, #fff, #111, #fff);
-}
-
 .projects-links .wrapper h2 {
     font-family: 'Teko', sans-serif;
     font-size: 35px;
@@ -286,12 +277,6 @@ main {
 
 /*<PROJECTS-DESKTOP>*/
 @media only screen and (min-width: 900px) {
-    .projects-links hr {
-        width: calc(100% - 100px);
-        height: 1.2px;
-        margin: 0px 50px 0px;
-    }
-
     .projects-links .wrapper h2 {
         font-size: 45px;
         text-transform: uppercase;
@@ -329,15 +314,6 @@ main {
 }
 
 /*<ABOUT-ME-MOBILE*/
-.presentation hr {
-    border: 0;
-    width: calc(100% - 40px);
-    height: 1.2px;
-    margin: 0px 20px 20px;
-    background: #111;
-    background-image: linear-gradient(to right, #fff, #111, #fff);
-}
-
 .presentation .wrapper {
     width: 80%;
     margin: 0px auto 20px;
@@ -358,8 +334,6 @@ main {
     margin: 20px 0px;
 }
 
-
-
 .presentation .wrapper p {
     text-align: justify;
     text-indent: 2em;
@@ -373,10 +347,95 @@ main {
         width: 700px;
     }
 
-    .projects-links hr {
-        width: calc(100% - 100px);
-        height: 1.2px;
-        margin: 0px 50px 0px;
+    .presentation .wrapper h2 {
+        font-size: 45px;
+    }
+}
+
+/*<PORTFOLIO-MOBILE*/
+.wrapper .portfolio h2 {
+    font-family: 'Teko', sans-serif;
+    font-size: 35px;
+    font-weight: 550;
+    color: #111;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 20px 0px;
+} 
+
+.wrapper .portfolio-box {
+    margin: 0px 20px 20px;
+    /*because we have 10px of margin on left and right*/
+    width: calc(100% - 40px);
+    background-color: #f2f2f2;
+}
+
+.wrapper .portfolio h2 + .portfolio-box {
+    padding-bottom: 20px;
+}
+
+.wrapper .portfolio-box h3 {
+    font-family: 'Teko', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: #111;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    padding: 20px 0px 0px 0px;
+}
+.wrapper .portfolio-box h4 {
+    font-family: 'Teko', sans-serif;
+    font-size: 23px;
+    font-weight: 500;
+    color: #111;
+    padding: 20px 0px 10px 20px;
+    text-decoration: underline;
+}
+
+.wrapper .portfolio-box ul {
+    margin-left: 30px;
+}
+
+.wrapper .portfolio-box li {
+    line-height: 30px;
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    list-style: circle;
+}
+
+.wrapper .portfolio-box p {
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+    margin-left: 30px;
+}
+.wrapper .portfolio-box #projects p {
+    text-indent: 20px;
+    margin: 0px;
+    padding: 10px 20px 20px 20px;
+}
+
+/*<PORTFOLIO-DESKTOP*/
+@media only screen and (min-width: 900px) {
+    .wrapper .portfolio h2 {
+        font-size: 45px;
+    } 
+
+    .wrapper .portfolio-box h3 {
+        font-size: 40px;
+    }
+    .wrapper .portfolio-box h4 {
+        font-size: 31px;
     }
 
+    .wrapper .portfolio-box li {
+        font-size: 25px;
+    }
+    
+    .wrapper .portfolio-box p {
+        font-size: 25px;
+    }
 }

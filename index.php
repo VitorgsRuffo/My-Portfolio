@@ -1,5 +1,5 @@
 <?php require("templates/header.php"); ?>
-    
+
         <main>  <!-- represents the main content of the body of a document or application-->
             <section class="banner">  <!-- represents a standalone section — which doesn't have a more specific semantic element to represent it. It usually have a heading-->
                 <div class="center-banner-text">
@@ -20,12 +20,12 @@
                         </a>
                     </div>
                     <div class="squared-box">
-                        <a href="https://github.com/VitorgsRuffo">
+                        <a href="https://github.com/VitorgsRuffo" target="_blank">
                             <h3>Github</h3>
                         </a>
                     </div>
                     <div class="rectangular-box">
-                        <a href="https://www.youtube.com/channel/UCBVNcZwlLqROnVzAiPeE1lg">
+                        <a href="https://www.youtube.com/channel/UCBVNcZwlLqROnVzAiPeE1lg" target="_blank">
                             <h3>Youtube Channel</h3>
                         </a>
                     </div>
@@ -41,6 +41,5 @@
                     </div>
                 </section>
             </div>
-        </main> 
-        
+        </main>   
 <?php require("templates/footer.php"); ?>

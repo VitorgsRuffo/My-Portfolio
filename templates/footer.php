@@ -12,10 +12,10 @@
                 <li><a href="../pages/contact-list.php">Contact List - C program</a></li>
             </ul>
             <div class="socialMedia">
-                <a href="https://github.com/VitorgsRuffo">
+                <a href="https://github.com/VitorgsRuffo" target="_blank">
                     <img src="../images/gh-logo.png" alt="github page link">
                 </a>
-                <a href="https://www.youtube.com/channel/UCBVNcZwlLqROnVzAiPeE1lg">
+                <a href="https://www.youtube.com/channel/UCBVNcZwlLqROnVzAiPeE1lg" target="_blank">
                     <img src="../images/yt-logo.png" alt="youtube channel link">
                 </a>
             </div>

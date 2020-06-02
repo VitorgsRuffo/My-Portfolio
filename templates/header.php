@@ -13,7 +13,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Vitor G.S.Ruffo | <?php echo $title;?></title>
+        <title>VitorgsRuffo | <?php echo $title;?></title>
         <meta charset="UTF-8">
         <!-- this meta tag tells the browser how to control the page's dimensions and scalling so that it can adapt in different viewports-->
         <!-- a viewport is the webpage visible area to the user. Different devices have different viewports, so the page needs to adapt itself to fit in the viewports.-->
@@ -27,7 +27,7 @@
     </head>
     <body>
         <header> <!--container for introductory content or a set of navigational links.-->
-            <a href="../index.php" class="logo">Vitor G.S Ruffo</a>
+            <a href="../index.php" class="logo">VitorgsRuffo</a>
             <nav>  <!--section of a page whose purpose is to provide navigation links, either within the current document or to other documents-->
                 <ul>
                     <li><a href="../pages/portfolio.php">Portfolio</a></li>
@@ -37,4 +37,5 @@
 
                 <a href="../pages/projects.php" class="projects-button">Projects</a>
             </nav>
+            <hr>
         </header>
