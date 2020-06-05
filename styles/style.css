@@ -110,6 +110,19 @@ input, select {
 /*removes the bullet points from the list itens. bullet points are a default style for unordered lists*/
 li { list-style: none; }
 
+body{
+    height: 100vh;
+}
+/*remove default style from submit inputs*/
+input[type="submit"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
 
 /*<INDEX-MOBILE>*/
 main {
@@ -628,4 +641,142 @@ input[name="r"] { /*The [attribute=value] selector is used to select elements wi
     .wrapper .info .contact p + p {
         font-size: 25px;
     }
+}
+
+/*<CONTACT-MOBILE*/
+.wrapper .contact-area {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contact-area p {
+    text-indent: 20px;
+    font-size: 20px;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+.contact-area .form {
+    width: 100%;
+    background-color: #111;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(1,1,1,0.13);
+    padding-bottom: 10px;
+}
+
+.contact-area .inputs {
+    width: calc(100% - 40px);
+    margin: 0 20px;
+    padding-top: 10px;
+}
+
+.contact-area .inputs input, .inputs textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 0px 10px;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+.inputs textarea {
+    height: 150px;
+}
+
+::placeholder {
+    color: #fff;
+    font-size: 14px;
+}
+
+.contact-area .sendButton {
+    background: #fff;
+    width: 50%;
+    height: 25px;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 5px;
+    font-family: 'Teko', sans-serif;
+    color: #111;
+    font-size: 20px;
+    font-weight: 550;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.contact-area .contact {
+    width: 100%;
+    height: 150px;
+    background-color: #e3e3e3;
+    margin: 20px 0px 20px 0px;
+    border-radius: 10px;
+}
+
+.contact-area .contact p {
+    font-family: 'Teko', sans-serif;
+    font-size: 28px;
+    color: #111;
+    text-align: center;
+    font-weight: 550;
+    padding-top: 47.4px;
+}
+
+.contact-area .contact p + p {
+    padding-top: 10px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/*<CONTACT-DESKTOP*/
+@media only screen and (min-width: 900px) {
+    .contact-area p {
+        text-indent: 30px;
+        font-size: 21px;
+    } 
+
+    .contact-area .form {
+        border-radius: 20px;
+        box-shadow: 0 0 5px #111;
+        padding-bottom: 20px;
+    }
+
+    .contact-area .inputs {
+        padding-top: 20px;
+    }
+
+    .contact-area .inputs input, .inputs textarea {
+    
+        margin-bottom: 20px;
+        padding: 20px 0px 20px;
+        border-bottom: 4px solid #fff;
+    }
+
+    ::placeholder {
+        font-size: 16px;
+    }
+    
+    .contact-area .sendButton {
+        width: 40%;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 10px;
+        font-size: 25px;
+    }
+
+    .contact-area .contact {
+        border-radius: 10px;
+    }
+
+    .contact-area .contact p {
+        font-size: 33px;
+        padding-top: 40.5px;
+        margin: 0;
+    }
+
+    .contact-area .contact p + p {
+        padding-top: 10px;
+        font-size: 26px;
+    }   
 }
