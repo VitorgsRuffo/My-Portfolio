@@ -721,12 +721,23 @@ input[name="r"] { /*The [attribute=value] selector is used to select elements wi
     text-align: center;
     font-weight: 550;
     padding-top: 47.4px;
+    margin: 0;
 }
 
 .contact-area .contact p + p {
     padding-top: 10px;
     font-size: 22px;
     font-weight: 500;
+}
+
+.emailSent {
+    text-align: center;
+    color: green !important;
+}
+
+.emailNotSent {
+    text-align: center;
+    color: red !important;
 }
 
 /*<CONTACT-DESKTOP*/
@@ -772,7 +783,6 @@ input[name="r"] { /*The [attribute=value] selector is used to select elements wi
     .contact-area .contact p {
         font-size: 33px;
         padding-top: 40.5px;
-        margin: 0;
     }
 
     .contact-area .contact p + p {
