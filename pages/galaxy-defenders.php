@@ -53,8 +53,19 @@
         <section class="info">
             <article class="description">  
                 <h3>Description</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero, nobis soluta eaque voluptatum doloribus labore exercitationem! Molestiae deserunt a laborum veritatis corporis quis doloribus, sed iste qui fugit cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur recusandae expedita sit officia obcaecati tempora doloribus, dolor ducimus odio quisquam harum commodi modi atque fugiat ipsum maxime saepe amet libero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas doloribus obcaecati id aliquam aut! Veritatis doloremque odio, error debitis quidem itaque non ipsum quam assumenda unde deserunt inventore quasi. Eligendi.</p>
-                <!--see how a can put the .rar(ubuntu and windows) of the game so that people can download it. -->
+                <p>This project is a C game based on Space Invaders built by <a href="https://github.com/OlavoNascimento" target="_blank">Olavo Nascimento</a>, Vitor G. S. Ruffo and  <a href="https://github.com/wellintonpiassa" target="_blank">Wellinton Piassa</a>. It was made as an assignment for the programming first-year discipline of the State University of Londrina's Computer Science course.</p>
+                <p>That was my first big project and it took me and my college fellows three months to finish it. We had to work really hard to get it working before the deadline. At the time we started it I didn't have much programming experience thus besides helping my friends build the game I had to learn the C language. We used a library called Allegro 5 that helped us a lot on the process, you can check its documentation on this <a href="https://liballeg.org/api.html" target="_blank">link</a>.</p>
+                <p>This is an open source project so you can check its code   <a href="https://github.com/VitorgsRuffo/Galaxy-Defenders" target="_blank">here</a> on my github page.</p>
+
+                <h3>Download the game</h3>
+                <ul>
+                    <div class="downloadButton">
+                        <li>Windows Version</li>
+                    </div>
+                    <div class="downloadButton">
+                        <li>Ubuntu Version</li>
+                    </div>
+                </ul>
             </article>
             <div class="contact">
                 <p>Contact me</p>

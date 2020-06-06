@@ -124,6 +124,10 @@ input[type="submit"] {
 	outline: inherit;
 }
 
+body {
+    background-color: #f6f6f6;
+}
+
 /*<INDEX-MOBILE>*/
 main {
     padding-top: 140px;
@@ -138,7 +142,7 @@ main {
     /*we don't want that. We want the banner to taken the left space of the viewheight so we can use calc() to calculate this rest and assign it to the height of the banner*/
     
     /*calc() function performs a calculation to be used as the property value.*/
-    height: calc(100vh - 120px); 
+    height: calc(100vh - 140px); 
 
     /*sets one or more background images for an element.*/
     background-image: url(../images/banner5.png);
@@ -183,7 +187,10 @@ main {
     /*because we have 10px of margin on left and right*/
     width: calc(100% - 40px);
     height: 100px;
-    background-color: #f2f2f2;
+    background-color: #fff;
+    border-radius: 10px;
+    /*box-shadow: horizontal-offset(shadow x) vertical-offset(shadow y) how-blurred-it-is how-big-it-is color*/
+    box-shadow: 2px 2px 5px 0px #111;
 }
 
 .links div a h3 {
@@ -219,7 +226,6 @@ main {
         margin: 0px 10px 20px 10px;
         /*because we have 10px of margin on left and right*/
         height: 150px;
-        background-color: #e3e3e3;
         float: left;
     }
 
@@ -255,13 +261,14 @@ main {
     width: 65%;
     height: 100px;
     margin: 20px auto;
-    background-color: #e3e3e3;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 0px #111;
 }
 
 .projects-links .wrapper .contact {
     width: calc(100% - 40px);
     height: 150px;
-    border: 1px solid #111;
 }
 
 .projects-links .wrapper div p {
@@ -301,13 +308,11 @@ main {
         width: calc(33.33% - 20px);
         height: 150px;
         margin: 0px 10px 20px 10px;
-        background-color: #e3e3e3;
     }
 
     .projects-links .wrapper .contact {
         width: calc(100% - 20px);
         height: 150px;
-        border: 1px solid #111;
     }
 
     .projects-links .wrapper div p {
@@ -348,7 +353,7 @@ main {
 
 .presentation .wrapper p {
     text-align: justify;
-    text-indent: 2em;
+    text-indent: 20px;
     font-size: 20px;
     color: #111;
 }
@@ -380,7 +385,9 @@ main {
     margin: 0px 20px 20px;
     /*because we have 10px of margin on left and right*/
     width: calc(100% - 40px);
-    background-color: #f2f2f2;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px 0px #111;
 }
 
 .wrapper .portfolio h2 + .portfolio-box {
@@ -569,18 +576,41 @@ input[name="r"] { /*The [attribute=value] selector is used to select elements wi
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 3px;
-    margin-bottom: 20px;
+    margin: 20px 0px 20px 0px;
 }
 
 .wrapper .info .description p {
+    font-size: 17px;
     text-indent: 20px;
+    text-align: justify;
 }
+
+.wrapper .info .description .downloadButton {
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    background-color: #fff;
+    margin: 0px auto 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px 0px #111;
+}
+
+.wrapper .info .description ul li {
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+    color: #111;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 
 .wrapper .info .contact {
     width: calc(100% - 40px);
     height: 150px;
-    background-color: #e3e3e3;
+    background-color: #fff;
     margin: 0px 20px 20px 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 0px #111;
 }
 
 .wrapper .info .contact p {
@@ -625,8 +655,11 @@ input[name="r"] { /*The [attribute=value] selector is used to select elements wi
     }
 
     .wrapper .info .description p {
-        column-count: 2;
-        column-gap: 20px; 
+        font-size: 25px;
+    }
+
+    .wrapper .info .description ul li {
+        font-size: 25px;
     }
 
     .wrapper .info .contact {
@@ -659,9 +692,9 @@ input[name="r"] { /*The [attribute=value] selector is used to select elements wi
 .contact-area .form {
     width: 100%;
     background-color: #111;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(1,1,1,0.13);
     padding-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 0px #111;
 }
 
 .contact-area .inputs {
@@ -709,9 +742,10 @@ input[name="r"] { /*The [attribute=value] selector is used to select elements wi
 .contact-area .contact {
     width: 100%;
     height: 150px;
-    background-color: #e3e3e3;
+    background-color: #fff;
     margin: 20px 0px 20px 0px;
     border-radius: 10px;
+    box-shadow: 2px 2px 5px 0px #111;
 }
 
 .contact-area .contact p {
