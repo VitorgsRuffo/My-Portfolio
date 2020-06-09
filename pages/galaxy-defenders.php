@@ -53,17 +53,21 @@
         <section class="info">
             <article class="description">  
                 <h3>Description</h3>
-                <p>This project is a C game based on Space Invaders built by <a href="https://github.com/OlavoNascimento" target="_blank">Olavo Nascimento</a>, Vitor G. S. Ruffo and  <a href="https://github.com/wellintonpiassa" target="_blank">Wellinton Piassa</a>. It was made as an assignment for the programming first-year discipline of the State University of Londrina's Computer Science course.</p>
-                <p>That was my first big project and it took me and my college fellows three months to finish it. We had to work really hard to get it working before the deadline. At the time we started it I didn't have much programming experience thus besides helping my friends build the game I had to learn the C language. We used a library called Allegro 5 that helped us a lot on the process, you can check its documentation on this <a href="https://liballeg.org/api.html" target="_blank">link</a>.</p>
-                <p>This is an open source project so you can check its code   <a href="https://github.com/VitorgsRuffo/Galaxy-Defenders" target="_blank">here</a> on my github page.</p>
+                <p>This project is a C game based on Space Invaders built by <a href="https://github.com/OlavoNascimento" target="_blank">Olavo Nascimento</a>, Vitor G. S. Ruffo, and  <a href="https://github.com/wellintonpiassa" target="_blank">Wellinton Piassa</a>. It was made as an assignment for the programming first-year discipline of the State University of Londrina's Computer Science course.</p>
+                <p>That was my first big project and it took me and my college fellows three months to finish it. We had to work hard to get it working before the deadline. At the time we started it I didn't have much programming experience thus besides helping my friends build the game I had to learn the C language. We used a library called Allegro 5 that helped us a lot in the process, you can check its documentation on this <a href="https://liballeg.org/api.html" target="_blank">link</a>.</p>
+                <p>All the magic behind this game relies on moving images on the screen at very specific moments. Be aware that any point on the game screen has an X and Y coordinates that locate it. For instance, the player ship image is located at a specific part of the screen when the game starts, if we press the right arrow (->) of the keyboard we're going to add 10 to the ship image X coordinate moving it to the right. The thing is, we check if the location of any image on the screen needs to change because some event just happened then we redraw all images on the screen at its current location. That happens 60 times per second, that's why the game seems to be very fluid. Examples of events can be the act of pressing a specific key (space bar, for example), or just time passing.</p>
+                <p>This is an open source project and you can check its code   <a href="https://github.com/VitorgsRuffo/Galaxy-Defenders" target="_blank">here</a> on my Github page.</p>
 
                 <h3>Download the game</h3>
                 <ul>
-                    <div class="downloadButton">
-                        <li>Windows Version</li>
-                    </div>
+                    <a href="../download/galaxy-defenders.rar" download>
+                        <div class="downloadButton">
+                            <li>Windows Version</li>
+                        </div>
+                    </a>
                     <div class="downloadButton">
                         <li>Ubuntu Version</li>
+                        <p>*Not available yet</p>
                     </div>
                 </ul>
             </article>

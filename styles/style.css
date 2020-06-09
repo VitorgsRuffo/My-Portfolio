@@ -165,19 +165,19 @@ main {
 
 .banner h2 {
     font-family: 'Teko', sans-serif;
-    font-size: 60px;
+    font-size: 80px;
     color: #fff;
-    line-height: 70px;
+    line-height: 90px;
     text-align: center;
     text-shadow: 2px 2px 2px #111;
 }
 
 .banner h1 {
     font-family: 'Teko', sans-serif;
-    font-size: 35px;
+    font-size: 45px;
     font-weight: 100;
     color: #fff;
-    line-height: 40px;
+    line-height: 50px;
     text-align: center;
     text-shadow: 2px 2px 3px #111;
 }
@@ -273,7 +273,7 @@ main {
 
 .projects-links .wrapper div p {
     font-family: 'Teko', sans-serif;
-    font-size: 20px;
+    font-size: 23px;
     font-weight: 500;
     color: #111;
     text-transform: uppercase;
@@ -283,14 +283,17 @@ main {
 }
 
 .projects-links .wrapper .contact p {
-    line-height: normal;
+    line-height: 25px;
+    letter-spacing: 0px;
     font-weight: 550;
-    padding-top: 47.4px;
+    font-size: 25px;
+    padding-top: 46.5px;
 }
 
 .projects-links .wrapper .contact p + p {
     padding-top: 10px;
-    font-size: 18px;
+    font-size: 23px;
+    line-height: 23px;
     font-weight: 500;
 }
 
@@ -321,12 +324,14 @@ main {
     }
 
     .projects-links .wrapper .contact p {
-        font-size: 27px;
-        padding-top: 28.85px;
+        font-size: 30px;
+        line-height: 30px;
+        padding-top: 42.5px;
     }
     
     .projects-links .wrapper .contact p + p {
-        font-size: 23px;  
+        font-size: 25px;  
+        line-height: 25px;
     }
 }
 
@@ -352,9 +357,10 @@ main {
 }
 
 .presentation .wrapper p {
+    font-family: 'Tenali Ramakrishna', sans-serif;
     text-align: justify;
     text-indent: 20px;
-    font-size: 20px;
+    font-size: 25px;
     color: #111;
 }
 
@@ -366,6 +372,10 @@ main {
 
     .presentation .wrapper h2 {
         font-size: 45px;
+    }
+
+    .presentation .wrapper p {
+        font-size: 28px;
     }
 }
 
@@ -406,7 +416,8 @@ main {
 }
 .wrapper .portfolio-box h4 {
     font-family: 'Teko', sans-serif;
-    font-size: 23px;
+    font-size: 25px;
+    letter-spacing: 1.5px;
     font-weight: 500;
     color: #111;
     padding: 20px 0px 10px 20px;
@@ -419,16 +430,16 @@ main {
 
 .wrapper .portfolio-box li {
     line-height: 30px;
-    font-family: 'Teko', sans-serif;
-    font-size: 20px;
+    font-family: 'Tenali Ramakrishna', sans-serif;    
+    font-size: 22px;
     margin-left: 20px;
     margin-right: 20px;
     list-style: circle;
 }
 
 .wrapper .portfolio-box p {
-    font-family: 'Teko', sans-serif;
-    font-size: 20px;
+    font-family: 'Tenali Ramakrishna', sans-serif;
+    font-size: 22px;
     margin-left: 30px;
 }
 .wrapper .portfolio-box #projects p {
@@ -444,10 +455,11 @@ main {
     } 
 
     .wrapper .portfolio-box h3 {
-        font-size: 40px;
+        font-size: 35px;
     }
     .wrapper .portfolio-box h4 {
-        font-size: 31px;
+        font-size: 30px;
+        letter-spacing: 3px;
     }
 
     .wrapper .portfolio-box li {
@@ -570,7 +582,7 @@ input[name="r"] { /*The [attribute=value] selector is used to select elements wi
 
 .wrapper .info .description h3 {
     font-family: 'Teko', sans-serif;
-    font-size: 23px;
+    font-size: 25px;
     font-weight: 550;
     color: #111;
     text-transform: uppercase;
@@ -580,7 +592,8 @@ input[name="r"] { /*The [attribute=value] selector is used to select elements wi
 }
 
 .wrapper .info .description p {
-    font-size: 17px;
+    font-family: 'Tenali Ramakrishna', sans-serif;
+    font-size: 25px;
     text-indent: 20px;
     text-align: justify;
 }
@@ -597,10 +610,21 @@ input[name="r"] { /*The [attribute=value] selector is used to select elements wi
 
 .wrapper .info .description ul li {
     font-family: 'Teko', sans-serif;
-    font-size: 20px;
+    font-size: 24px;
     color: #111;
     text-transform: uppercase;
     text-align: center;
+}
+
+.wrapper .info .description .downloadButton p {
+    font-family: 'Teko', sans-serif;
+    font-size: 19px;
+    color: #111;
+    text-align: center;
+    text-indent: 0px;
+    color: red;
+    padding-top: 5px;
+    letter-spacing: 1.0px;
 }
 
 
@@ -615,16 +639,16 @@ input[name="r"] { /*The [attribute=value] selector is used to select elements wi
 
 .wrapper .info .contact p {
     font-family: 'Teko', sans-serif;
-    font-size: 28px;
+    font-size: 30px;
     color: #111;
     text-align: center;
     font-weight: 550;
-    padding-top: 47.4px;
+    padding-top: 42.5px;
 }
 
 .wrapper .info .contact p + p {
     padding-top: 10px;
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 500;
 }
 
@@ -650,17 +674,23 @@ input[name="r"] { /*The [attribute=value] selector is used to select elements wi
     }
 
     .wrapper .info .description h3 {
-        font-size: 30px;
+        font-size: 35px;
 
     }
 
     .wrapper .info .description p {
-        font-size: 25px;
+        font-size: 28px;
     }
 
     .wrapper .info .description ul li {
         font-size: 25px;
     }
+
+    .wrapper .info .description .downloadButton p {
+        font-size: 20px;
+        letter-spacing: 1.5px;
+    }
+    
 
     .wrapper .info .contact {
         width: calc(100% - 17px);
@@ -683,8 +713,9 @@ input[name="r"] { /*The [attribute=value] selector is used to select elements wi
 }
 
 .contact-area p {
+    font-family: 'Tenali Ramakrishna', sans-serif;
     text-indent: 20px;
-    font-size: 20px;
+    font-size: 25px;
     color: #111;
     margin-bottom: 20px;
 }
@@ -711,6 +742,7 @@ input[name="r"] { /*The [attribute=value] selector is used to select elements wi
     border: 0;
     border-bottom: 2px solid #fff;
     color: #fff;
+    font-size: 18px;
 }
 
 .inputs textarea {
@@ -719,7 +751,7 @@ input[name="r"] { /*The [attribute=value] selector is used to select elements wi
 
 ::placeholder {
     color: #fff;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .contact-area .sendButton {
@@ -778,7 +810,7 @@ input[name="r"] { /*The [attribute=value] selector is used to select elements wi
 @media only screen and (min-width: 900px) {
     .contact-area p {
         text-indent: 30px;
-        font-size: 21px;
+        font-size: 28px;
     } 
 
     .contact-area .form {
@@ -796,10 +828,11 @@ input[name="r"] { /*The [attribute=value] selector is used to select elements wi
         margin-bottom: 20px;
         padding: 20px 0px 20px;
         border-bottom: 4px solid #fff;
+        font-size: 20px;
     }
 
     ::placeholder {
-        font-size: 16px;
+        font-size: 17px;
     }
     
     .contact-area .sendButton {

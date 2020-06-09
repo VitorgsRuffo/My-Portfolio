@@ -53,7 +53,9 @@
         <section class="info">
             <article class="description">  
                 <h3>Description</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero, nobis soluta eaque voluptatum doloribus labore exercitationem! Molestiae deserunt a laborum veritatis corporis quis doloribus, sed iste qui fugit cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur recusandae expedita sit officia obcaecati tempora doloribus, dolor ducimus odio quisquam harum commodi modi atque fugiat ipsum maxime saepe amet libero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas doloribus obcaecati id aliquam aut! Veritatis doloremque odio, error debitis quidem itaque non ipsum quam assumenda unde deserunt inventore quasi. Eligendi.</p>
+                <p>This project is a terminal-based contact list program built by <a href="https://github.com/OlavoNascimento" target="_blank">Olavo Nascimento</a>, Vitor G. S. Ruffo, and  <a href="https://github.com/wellintonpiassa" target="_blank">Wellinton Piassa</a> in C language. It was made as an assignment for the programming first-year discipline of the State University of Londrina's Computer Science course.</p>
+                <p>It allows you to add new contacts, edit or delete an existing contact, list all contacts, and search for a specific one by providing its name. The contacts are saved on a file, on the same directory as the program, so that you don't lose data when finishing the program. It took us more or less one month to finish that assignment.</p>
+                <p>This is an open source project and you can check its code <a href="https://github.com/VitorgsRuffo/Contact_List_Software" target="_blank">here</a> on my Github page.</p>
             </article>
             <div class="contact">
                 <p>Contact me</p>

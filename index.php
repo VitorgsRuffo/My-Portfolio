@@ -4,7 +4,7 @@
             <section class="banner">  <!-- represents a standalone section — which doesn't have a more specific semantic element to represent it. It usually have a heading-->
                 <div class="center-banner-text">
                     <h2>I'M A <br>COMPUTER SCIENCE<br>MAJOR</h2>
-                    <h1>currently working with full-stack web development.</h1>
+                    <h1>currently working with full-stack<br>web development.</h1>
                 </div>
             </section>
             <div class="wrapper">

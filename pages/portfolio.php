@@ -21,19 +21,19 @@
                         <li>English (Advanced)</li>
                     </ul>
                     <h4>Education:</h4>
-                    <p>Computer Sciece Graduation - conclusion in 12/2022<br>State University of Londrina, Brazil</p>
+                    <p>Computer Science Graduation - conclusion in 12/2022<br>State University of Londrina, Brazil</p>
                     <h4>Extracurricular experiences:</h4>
                     <ul>
-                        <li>Problem solving project using <a href="https://www.urionlinejudge.com.br/" target="_blank">URI</a> website.</li>
+                        <li>Problem-solving project using <a href="https://www.urionlinejudge.com.br/" target="_blank">URI</a> website.</li>
                         <li>2019 ICPC South America/Brazil First Phase.</li>
-                        <li>Computer Science presentation in the State University of Londrina's 2019 professions exhibition. 
+                        <li>Computer Science presentation at the State University of Londrina's 2019 professions exhibition. 
                     </ul>
                 </article>
             </div>
             <div class="portfolio-box">
                 <article id="projects">
                     <h3>Projects:</h3>
-                    <p>I have developed some projects since I started my Computer Science course. The more important ones can be found at <a href="projects.php">Projects</a> page. In order to see more projects you can check my <a href="https://github.com/VitorgsRuffo" target="_blank">github page</a>.</p>
+                    <p>I have developed some projects since I started my Computer Science course. The more important ones can be found on the <a href="projects.php">Projects</a> page. To see more projects you can check my <a href="https://github.com/VitorgsRuffo" target="_blank">Github page</a>.</p>
                 </article>
             </div>
         </section>
