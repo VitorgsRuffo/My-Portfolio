@@ -6,7 +6,7 @@
                     'Descrição',
                     'Este projeto é um programa de lista de contatos que roda no terminal, feito por <a href="https://github.com/OlavoNascimento" target="_blank">Olavo Nascimento</a>, Vitor G. S. Ruffo e <a href="https://github.com/wellintonpiassa" target="_blank">Wellinton Piassa</a> usando a linguagem C. Ele foi feito como um trabalho para a disciplina de programação do primeiro ano do curso de Ciência da Computação da Universidade Estadual de Londrina.',
                     'O programa te permite adicionar novos contatos, editar ou deletar um contato existente, listar todos os contatos, e procurar por um contato específico, basta fornecer o nome. Os contatos são salvos em um arquivo, no mesmo diretório do programa, para que você não perca os dados quando finaliza-lo. Nos levou mais ou menos um mês para terminar esse trabalho.',
-                    'Este é um projeto de código aberto e você pode dar uma olhada no código na minha página do <a href="https://github.com/VitorgsRuffo/Contact_List_Software" target="_blank">Github</a>.',
+                    'Este programa é um projeto de código aberto que pode ser encontrado na minha página do <a href="https://github.com/VitorgsRuffo/Contact_List_Software" target="_blank">Github</a>.',
                     'Entre em contato'),
         'en'=>array('Contact List',
                     'Description',

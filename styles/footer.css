@@ -2,7 +2,7 @@
 footer {
     width: calc(100% - 40px);
     /*let's just set a padding and not a height. That way the footer's height will adapt acordding to the things it wraps*/
-    padding: 20px 20px;
+    padding: 30px 20px;
     background-color: #111;
     
     overflow: hidden; 

@@ -2,14 +2,14 @@
 
 <?php 
     $portfolio = array(
-        'pt'=>array('Portifolio', 'Curriculo', 'Experiência com tecnologias de programação:',
+        'pt'=>array('Portifolio', 'Currículo', 'Experiência com tecnologias de programação:',
                     'Iniciante', 'Intermediário', 'Avançado', 'Idiomas:',
                     'Português brasileiro (Nativo)', 'Inglês (Avançado)',
                     'Formação Acadêmica:',
                     'Bacharel em Ciência da Computação - conclusão em 2023<br>Universidade Estadual de Londrina, Brasil',
                     'Experiências extracurriculares:',
                     'Projeto de resolução de problemas usando o website <a href="https://www.urionlinejudge.com.br/" target="_blank">URI</a>.',
-                    'Primeira fase da Maratona SBC de Programação 2019',
+                    'Primeira fase da Maratona SBC de Programação 2019.',
                     'Apresentação de Ciência da Computação na Feira das Profissões 2019 da UEL.',
                     'Projetos:',
                     'Eu desenvolvi alguns projetos desde que iniciei meu curso de ciência da computação. Os mais importantes podem ser encontrados na página de', 'Projetos</a>. Para ver mais projetos você pode checar minha página no <a href="https://github.com/VitorgsRuffo" target="_blank">Github</a>.'),

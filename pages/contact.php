@@ -3,9 +3,9 @@
 <?php 
     $contact = array(
         'pt'=>array('Contato', 
-                    'Quer me perguntar algo? Me envie um e-mail! Aqui voc&ecirc; tambem pode relatar bugs ou s&oacute; me dar um feedback do site.',
+                    'Quer me perguntar algo? Me envie um e-mail! Aqui você também pode relatar bugs ou só me dar um feedback do site.',
                     'Seu e-mail foi enviado.<br>Obrigado pelo seu tempo.',
-                    'Não foi possivel enviar o seu e-mail devido a um erro no servidor. Tente novamente mais tarde. Você tambem pode entrar em contato através do meu e-mail vitor.gs.ruffo@gmail.com',
+                    'Não foi possível enviar o seu e-mail devido a um erro no servidor. Tente novamente mais tarde. Você tambem pode entrar em contato através do meu e-mail vitor.gs.ruffo@gmail.com',
                     'Seu nome', 'Seu endereço de e-mail', 'Assunto', 'Digite sua mensagem..', 'Enviar', 'Entre em contato'),
         'en'=>array('Contact', 
                     'Do you have something to ask me? Send me an e-mail! Here you can also report bugs or just give me some feedback.', 

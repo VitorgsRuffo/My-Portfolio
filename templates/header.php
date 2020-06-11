@@ -54,6 +54,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- width=device-width: sets the width of the page to be equal to the width of the device that the user is using to see the page.-->
         <!-- initial-scale=1.0: sets the zoom level of the page-->
+        <link rel="icon" href="../images/favicon.ico">
         <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;600&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">       
         <link href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&display=swap" rel="stylesheet">
