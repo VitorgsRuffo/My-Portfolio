@@ -145,7 +145,7 @@ main {
     height: calc(100vh - 140px); 
 
     /*sets one or more background images for an element.*/
-    background-image: url(../images/banner5.png);
+    background-image: url(../images/banner5.jpg);
     /*By default, a background-image is placed at the top-left corner of an element, and repeated both vertically and horizontally if it do not cover all of its container.
       Tip: The background of an element is the total size of the element, including padding and border (but not the margin).
       Tip: Always set a background-color to be used if the image is unavailable.
@@ -165,21 +165,21 @@ main {
 
 .banner h2 {
     font-family: 'Teko', sans-serif;
-    font-size: 80px;
+    font-size: 65px;
     color: #fff;
-    line-height: 90px;
+    line-height: 70px;
     text-align: center;
-    text-shadow: 2px 2px 2px #111;
+    text-shadow: 1px 1px 100px black;
 }
 
 .banner h1 {
     font-family: 'Teko', sans-serif;
-    font-size: 45px;
+    font-size: 35px;
     font-weight: 100;
     color: #fff;
-    line-height: 50px;
+    line-height: 40px;
     text-align: center;
-    text-shadow: 2px 2px 3px #111;
+    text-shadow: 1px 1px 100px black;
 }
 
 .links div {
@@ -215,6 +215,16 @@ main {
         width: 700px;
         margin: 0 auto;
         overflow: hidden;
+    }
+
+    .banner h2 {
+        font-size: 65px;
+        line-height: 75px;
+    }
+    
+    .banner h1 {
+        font-size: 40px;
+        line-height: 45px;
     }
 
     .links {
@@ -266,6 +276,10 @@ main {
     box-shadow: 2px 2px 5px 0px #111;
 }
 
+.projects-links .wrapper .more-projects p {
+    font-weight: 550;
+}
+
 .projects-links .wrapper .contact {
     width: calc(100% - 40px);
     height: 150px;
@@ -313,6 +327,15 @@ main {
         margin: 0px 10px 20px 10px;
     }
 
+    .projects-links .wrapper .more-projects {
+       width: 680px;
+       margin: 0px 10px 20px 10px;
+    }
+
+    .projects-links .wrapper .more-projects p {
+        font-size: 30px;
+    }
+
     .projects-links .wrapper .contact {
         width: calc(100% - 20px);
         height: 150px;
@@ -357,10 +380,10 @@ main {
 }
 
 .presentation .wrapper p {
-    font-family: 'Tenali Ramakrishna', sans-serif;
+    font-family: 'Arapey', sans-serif;
     text-align: justify;
     text-indent: 20px;
-    font-size: 25px;
+    font-size: 22px;
     color: #111;
 }
 
@@ -375,7 +398,7 @@ main {
     }
 
     .presentation .wrapper p {
-        font-size: 28px;
+        font-size: 25px;
     }
 }
 
@@ -430,22 +453,23 @@ main {
 
 .wrapper .portfolio-box li {
     line-height: 30px;
-    font-family: 'Tenali Ramakrishna', sans-serif;    
-    font-size: 22px;
+    font-family: 'Arapey', sans-serif;    
+    font-size: 20px;
     margin-left: 20px;
     margin-right: 20px;
     list-style: circle;
 }
 
 .wrapper .portfolio-box p {
-    font-family: 'Tenali Ramakrishna', sans-serif;
-    font-size: 22px;
+    font-family: 'Arapey', sans-serif;
+    font-size: 20px;
     margin-left: 30px;
 }
 .wrapper .portfolio-box #projects p {
     text-indent: 20px;
     margin: 0px;
     padding: 10px 20px 20px 20px;
+    text-align: center;
 }
 
 /*<PORTFOLIO-DESKTOP*/
@@ -459,15 +483,7 @@ main {
     }
     .wrapper .portfolio-box h4 {
         font-size: 30px;
-        letter-spacing: 3px;
-    }
-
-    .wrapper .portfolio-box li {
-        font-size: 25px;
-    }
-    
-    .wrapper .portfolio-box p {
-        font-size: 25px;
+        letter-spacing: 1.5px;
     }
 }
 
@@ -588,14 +604,18 @@ input[name="r"] { /*The [attribute=value] selector is used to select elements wi
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 3px;
-    margin: 20px 0px 20px 0px;
+    margin: 20px 0px 0px 0px;
 }
 
 .wrapper .info .description p {
-    font-family: 'Tenali Ramakrishna', sans-serif;
-    font-size: 25px;
+    font-family: 'Arapey', sans-serif;
+    font-size: 22px;
     text-indent: 20px;
     text-align: justify;
+}
+
+.wrapper .info .description p:first-of-type {
+    margin-top: 20px;
 }
 
 .wrapper .info .description .downloadButton {
@@ -603,7 +623,7 @@ input[name="r"] { /*The [attribute=value] selector is used to select elements wi
     height: fit-content;
     padding: 20px;
     background-color: #fff;
-    margin: 0px auto 20px;
+    margin: 20px auto 0px;
     border-radius: 10px;
     box-shadow: 1px 1px 3px 0px #111;
 }
@@ -616,15 +636,16 @@ input[name="r"] { /*The [attribute=value] selector is used to select elements wi
     text-align: center;
 }
 
-.wrapper .info .description .downloadButton p {
+.wrapper .info .description #not {
     font-family: 'Teko', sans-serif;
     font-size: 19px;
     color: #111;
     text-align: center;
     text-indent: 0px;
     color: red;
-    padding-top: 5px;
     letter-spacing: 1.0px;
+    margin-top: 9px;
+    margin-bottom: 20px;
 }
 
 
@@ -679,7 +700,7 @@ input[name="r"] { /*The [attribute=value] selector is used to select elements wi
     }
 
     .wrapper .info .description p {
-        font-size: 28px;
+        font-size: 25px;
     }
 
     .wrapper .info .description ul li {
@@ -713,9 +734,9 @@ input[name="r"] { /*The [attribute=value] selector is used to select elements wi
 }
 
 .contact-area p {
-    font-family: 'Tenali Ramakrishna', sans-serif;
+    font-family: 'Arapey', sans-serif;
     text-indent: 20px;
-    font-size: 25px;
+    font-size: 22px;
     color: #111;
     margin-bottom: 20px;
 }
@@ -799,18 +820,20 @@ input[name="r"] { /*The [attribute=value] selector is used to select elements wi
 .emailSent {
     text-align: center;
     color: green !important;
+    text-indent: 0px !important;
 }
 
 .emailNotSent {
     text-align: center;
     color: red !important;
+    text-indent: 0px !important;
 }
 
 /*<CONTACT-DESKTOP*/
 @media only screen and (min-width: 900px) {
     .contact-area p {
         text-indent: 30px;
-        font-size: 28px;
+        font-size: 25px;
     } 
 
     .contact-area .form {

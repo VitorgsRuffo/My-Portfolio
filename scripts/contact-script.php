@@ -5,6 +5,7 @@
         $email = $_POST['email'];
         $subject = $_POST['subject'];
         $message = $_POST['message'];
+        $lang =  $_POST['lang'];
 
         //send me an email:
         require_once("../lib/PHPMailer/PHPMailerAutoload.php");
@@ -42,10 +43,10 @@
         $mail->Body = $message."\n<p>This e-mail was sent by ".$name." : ".$email.".</p>";
 
         if(!$mail->Send()){
-            header("Location: ../pages/contact.php?error=emailnotsent&info=".$mail->ErrorInfo);
+            header("Location: ../pages/contact.php?lang=".$lang."&error=emailnotsent&info=".$mail->ErrorInfo);
             exit();
         }else{
-            header("Location: ../pages/contact.php?success=emailsent");
+            header("Location: ../pages/contact.php?lang=".$lang."&success=emailsent");
             exit();
         }
             
