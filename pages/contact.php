@@ -6,12 +6,12 @@
                     'Quer me perguntar algo? Me envie um e-mail! Aqui você também pode relatar bugs ou só me dar um feedback do site.',
                     'Seu e-mail foi enviado.<br>Obrigado pelo seu tempo.',
                     'Não foi possível enviar o seu e-mail devido a um erro no servidor. Tente novamente mais tarde. Você tambem pode entrar em contato através do meu e-mail vitor.gs.ruffo@gmail.com',
-                    'Seu nome', 'Seu endereço de e-mail', 'Assunto', 'Digite sua mensagem..', 'Enviar', 'Entre em contato'),
+                    'Seu nome', 'Seu endereço de e-mail', 'Assunto', 'Digite sua mensagem..', 'Enviar','*Ainda não funciona.', 'Entre em contato'),
         'en'=>array('Contact', 
                     'Do you have something to ask me? Send me an e-mail! Here you can also report bugs or just give me some feedback.', 
                     'Your e-mail was sent.<br>Thank you for your time.',
                     'It was not possible to send your e-mail due to some error in the server. Try again later. You can also contact me at vitor.gs.ruffo@gmail.com.',
-                    'Your name', 'Your e-mail address', 'Subject', "Enter your message..", 'Send', 'Contact me')    
+                    'Your name', 'Your e-mail address', 'Subject', "Enter your message..", 'Send', '*Not working yet.', 'Contact me')    
     );
 ?>
 <main>
@@ -45,9 +45,10 @@
                     <input type="submit" name="submit" value="<?php echo $contact[$lang][8]; ?>">
                 </div>
             </form> <!-- validate data in the client part with JS -->
+            <p id="not"><?php echo $contact[$lang][9]; ?></p>
             <div class="contact">
                 <p>
-                    <?php echo $contact[$lang][9]; ?>
+                    <?php echo $contact[$lang][10]; ?>
                 </p>
                 <p>E-mail: vitor.gs.ruffo@gmail.com</p>
             </div>

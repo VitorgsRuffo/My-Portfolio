@@ -98,7 +98,7 @@
                     <p id="not"><?php echo $galaxyD[$lang][8]; ?></p>
                 </ul>
             </article>
-            <a href="contact.php">
+            <a href="contact.php?lang=<?php echo $lang; ?>">
                 <div class="contact">
                     <p><?php echo $galaxyD[$lang][9]; ?></p>
                     <p>E-mail: vitor.gs.ruffo@gmail.com</p>

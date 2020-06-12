@@ -43,6 +43,9 @@
                     </a>
                 </li>
             </ul>
+            <div class="middle-footer-info">
+                <p>&#169; 2020 VitorgsRuffo.</p>
+            </div>
             <div class="socialMedia">
                 <a href="https://github.com/VitorgsRuffo" target="_blank">
                     <img src="../images/gh-logo.png" alt="github page link">

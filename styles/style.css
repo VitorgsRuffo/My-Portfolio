@@ -636,15 +636,14 @@ input[name="r"] { /*The [attribute=value] selector is used to select elements wi
     text-align: center;
 }
 
-.wrapper .info .description #not {
+#not {
     font-family: 'Teko', sans-serif;
-    font-size: 19px;
-    color: #111;
+    font-size: 22px;
     text-align: center;
     text-indent: 0px;
     color: red;
     letter-spacing: 1.0px;
-    margin-top: 9px;
+    margin-top: 12px;
     margin-bottom: 20px;
 }
 
